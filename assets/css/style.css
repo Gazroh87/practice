@@ -1,0 +1,11 @@
+img {
+  max-width: 100%; /* A large image e.g. 2000px would appear off 
+  the page but with this fix the image scales to different 
+  screen sizes. Where a containing element (such as the body 
+  or a div it sits within) is less than the intrinsic width of
+  the image, it will simply scale up to the max available 
+  space.*/
+}
+
+/* width: 100% has a different effect. When the width property 
+is used the image will be displayed at 100% of the parent container/element size.*/
