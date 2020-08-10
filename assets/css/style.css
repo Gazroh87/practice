@@ -9,3 +9,26 @@ img {
 
 /* width: 100% has a different effect. When the width property 
 is used the image will be displayed at 100% of the parent container/element size.*/
+
+@media screen and (min-width: 50em) {
+  /* styles */
+  .IntroWrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+.MoneyShot,
+.IntroText {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.IntroText {
+    padding: .5rem;
+    font-size: 2.5rem;
+    text-align: left;
+}
