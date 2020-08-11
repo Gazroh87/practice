@@ -1,3 +1,47 @@
+html {
+  padding-top: 25px;
+  background-image: url(images/bg_page.jpg);
+}
+
+body {
+  background-color: #e1edeb;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: #ff7643;
+  font-family: Arial;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+p {
+  font-size: 12.5px;
+  color: #616161;
+  line-height: 150%;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.Header {
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  background-color: #ffffdf;
+  border: 2px solid #e8cfa9;
+}
+
+.Header p {
+  color: red;
+}
+
 img {
   max-width: 100%; /* A large image e.g. 2000px would appear off 
   the page but with this fix the image scales to different 
@@ -8,27 +52,75 @@ img {
 }
 
 /* width: 100% has a different effect. When the width property 
-is used the image will be displayed at 100% of the parent container/element size.*/
+is used the image will be displayed at 100% of the parent container/element 
+size.*/
 
-@media screen and (min-width: 50em) {
-  /* styles */
+.BoxModel {
+  padding: 10px;
+  margin: 5px;
+  border-width: 3px;
+}
+
+@media (min-width: 50em) {
+  /* styles within the media query */
   .IntroWrapper {
     display: table;
     table-layout: fixed;
     width: 100%;
   }
-}
 
-.MoneyShot,
-.IntroText {
+  .MoneyShot,
+.IntroText /* class and class */ {
     display: table-cell;
     width: 50%;
     vertical-align: middle;
     text-align: center;
-}
+    padding: 0.5rem;
+  }
 
-.IntroText {
-    padding: .5rem;
+  .IntroText {
     font-size: 2.5rem;
     text-align: left;
+  }
+
+  .Ingredients {
+    font-size: 0.8rem;
+    float: right;
+    padding: 1rem;
+    margin: 0 0 0.5rem 1rem;
+    border-radius: 3px;
+    background-color: #ffffdf;
+    border: 2px solid #e8cfa9;
+  }
+
+  .Ingredients h3 /* any h3 within the Ingredients class */ {
+    margin: 0;
+  }
+}
+
+@media (max-device-width: 400px) {
+  h1 {
+    color: blue;
+  }
+}
+
+@media (min-width: 320px) {
+  body {
+    background-color: green;
+  }
+}
+@media (min-width: 550px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-color: orange;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    background-color: white;
+  }
 }

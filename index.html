@@ -6,37 +6,23 @@
     <meta name="author" content="Gary R Hughes" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>HTML5 Sample Document (I am the title of this web page)</title>
-    <style>
-      /* html {
-        color: red;
-      } */
-
-      h1 {
-          color: #ff7643;
-          font-family: Arial;
-      }
-
-      p {
-        font-size: 12.5px;
-        color: black;
-      }
-
-      .Header p {
-        color: red;
-      }
-    </style>
+    <style></style>
   </head>
 
   <body>
+    <!-- Header -->
     <div class="Header">
-      <h1>Hire Me!(h1)</h1>
+      <h1 style="font-size: 2.5em;">Hire Me!(h1)</h1>
       <h6>Hello World!(h6)</h6>
       <p>Scones: the most resplendent of snacks(p)</p>
     </div>
+    <!-- Intro including hero image -->
     <div class="IntroWrapper">
       <p class="IntroText">
-        Occasionally misunderstood; the scone is a quintessentially British
-        classic.
+        <em
+          >Occasionally misunderstood; the scone is a quintessentially British
+          classic.</em
+        >
       </p>
       <div class="MoneyShot">
         <figure>
@@ -51,6 +37,29 @@
         </figure>
       </div>
     </div>
+    <!-- Recipe -->
+    <p>Recipe and serving suggestions follow</p>
+    <div class="Ingredients">
+      <h3 class="SubHeader">Ingredients</h3>
+      <ul>
+        <li>350g self-raising flour, and a little spare for dusting</li>
+        <li>1/4 tsp salt</li>
+        <li>1 tsp baking powder</li>
+        <li>85g butter, cut into cubes</li>
+        <li>3 tbsp caster sugar</li>
+      </ul>
+    </div>
+    <div class="HowToMake">
+      <h3 class="SubHeader">Method</h3>
+      <ol>
+        <li>Method 1</li>
+        <li>Method 2</li>
+        <li>Method 3</li>
+        <li>Method 4</li>
+        <li>Method 5</li>
+      </ol>
+    </div>
+    <!-- Paragraph examples -->
     <p>
       Hey, I am a paragraph of this web page. Paragraphs are block elements.
     </p>
@@ -59,6 +68,7 @@
       because my work is <strong>off the hizzle</strong>.
     </p>
     <hr />
+    <!-- Skills -->
     <p>My skills include:</p>
     <ul>
       <li>Fast typing.</li>
@@ -67,6 +77,7 @@
       <li>Negotiating with officers of the peace.</li>
     </ul>
     <p>And I also know HTML!</p>
+    <!-- Work experience -->
     <h2>Previous Work Experience</h2>
     <p>
       I have had a long and illustrious career in a variety of trades. Here are
@@ -86,6 +97,8 @@
       <a href="http://www.missingmanuals.com" target="blank_">Click here!</a
       >(http://www.missingmanuals.com)
     </p>
+    <hr />
+    <!-- divs and spans -->
     <div>
       (This is a div. A div is a block, meaning it has a line break before it
       and after it.)
@@ -103,6 +116,32 @@
       paragraph or heading.)</span
     >
     <hr />
+    <!-- blockquote -->
+    <p>Some words of wisdom from "A Tale of Two Cities":</p>
+    <blockquote>
+      <p>
+        It was the best of times, it was the worst of times, it was the age of
+        wisdom, it was the age of foolishness, it was the epoch of belief, it
+        was the epoch of incredulity, it was the season of Light, it was the
+        season of Darkness, it was the spring of hope, it was the winter of
+        despair, we had everything before us, we had nothing before us, we were
+        all going direct to Heaven, we were all going direct the other way-in
+        short, the period was so far like the present period, that some of its
+        noisiest authorities insisted on its being received, for good or for
+        evil, in the superlative degree of comparison only.
+      </p>
+    </blockquote>
+    <p>It's amazing what you can fit into one sentence.</p>
+    <hr />
+    <!-- Box Model -->
+    <p class="BoxModel">
+      When determining the space used by an element, remember to include the
+      border width. For example of the padding is set to 10px, the margin set to
+      5px, and the border-width set to 3px, the space used (in addition to the
+      actual element content) will be (2 * 10)+(2 * 5)+(2 * 3)=36px.
+    </p>
+    <p></p>
+    <!-- Footer -->
     <footer>
       <div id="footer">
         <p>Copyright 2020, <span class="bizName">SuperCo.com</span></p>
