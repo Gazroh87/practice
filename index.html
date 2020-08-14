@@ -116,7 +116,7 @@
       paragraph or heading.)</span
     >
     <hr />
-    <!-- blockquote -->
+    <!-- Quotes -->
     <p>Some words of wisdom from "A Tale of Two Cities":</p>
     <blockquote>
       <p>
@@ -132,6 +132,21 @@
       </p>
     </blockquote>
     <p>It's amazing what you can fit into one sentence.</p>
+    <p>
+      As Charles Dickens once wrote,
+      <q>It was the best of times, it was the worst of times</q>.
+    </p>
+    <p>
+      As Charles Dickens once wrote,
+      <q
+        cite="http://www.literature.org/authors/dickens-charles/a-tale-of-two-cities"
+        >It was the best of times, it was the worst of times</q
+      >. (Includes cite attribute)
+    </p>
+    <p>
+      The quote <q>It was the best of times, it was the worst of times</q> is
+      from <cite>A Tale of Two Cities</cite>. (Includes cite element)
+    </p>
     <hr />
     <!-- Box Model -->
     <p class="BoxModel">
@@ -140,7 +155,80 @@
       5px, and the border-width set to 3px, the space used (in addition to the
       actual element content) will be (2 * 10)+(2 * 5)+(2 * 3)=36px.
     </p>
-    <p></p>
+    <hr />
+    <h2>The Noble Eightfold Path</h2>
+    <ol type="I">
+      <li>Right View Wisdom</li>
+      <li>Right Intention</li>
+      <li>Right Speech Ethical Conduct</li>
+      <li>Right Action</li>
+      <li>Right Livelihood</li>
+      <li>Right Effort Mental Development</li>
+      <li>Right Mindfulness</li>
+      <li>Right Concentration</li>
+      <li></li>
+      <li></li>
+    </ol>
+    <ol type="A">
+      <li>Right View Wisdom</li>
+      <li>Right Intention</li>
+      <li>Right Speech Ethical Conduct</li>
+      <li>Right Action</li>
+      <li>Right Livelihood</li>
+      <li>Right Effort Mental Development</li>
+      <li>Right Mindfulness</li>
+      <li>Right Concentration</li>
+      <li></li>
+      <li></li>
+    </ol>
+    <hr />
+    <!-- Definition List -->
+    <dl>
+      <dt>Dictionary Term 1</dt>
+      <dd>Dictionary Definition 1.</dd>
+      <dt>Dictionary Term 2</dt>
+      <dd>Dictionary Definition 2.</dd>
+      <dt>Dictionary Term 3</dt>
+      <dd>Dictionary Definition 3.</dd>
+    </dl>
+    <hr />
+    <h2>Squared Circle Nested List</h2>
+    <ul type="square">
+      <li>
+        Monday
+        <ol>
+          <li>Plan schedule for week</li>
+          <li>
+            Complete Project X
+            <ul type="circle">
+              <li>Preliminary Interview</li>
+              <li>Wild Hypothesis</li>
+              <li>Final Report</li>
+            </ul>
+          </li>
+          <li>Edit bucket list</li>
+        </ol>
+      </li>
+      <li>
+        Tuesday
+        <ol>
+          <li>Revise schedule</li>
+          <li>
+            Procrastinate (time permitting). If necessary, put off
+            procrastination until another day.
+          </li>
+        </ol>
+      </li>
+      <li>Wednesday ...</li>
+    </ul>
+    <hr />
+    <!-- Symbol Cards -->
+    <a href="#" class="CardLink CardLink_Hearts">Hearts</a>
+    <a href="#" class="CardLink CardLink_Clubs">Clubs</a>
+    <a href="#" class="CardLink CardLink_Spades">Spades</a>
+    <a href="#" class="CardLink CardLink_Diamonds">Diamonds</a>
+    <a href="#" class="CardLink CardLink_Corporal">Corporal</a>
+    <a href="#" class="CardLink CardLink_Omega">Omega</a>
     <!-- Footer -->
     <footer>
       <div id="footer">
