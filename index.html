@@ -17,7 +17,7 @@
       <p>Scones: the most resplendent of snacks(p)</p>
     </div>
     <!-- Intro including hero image -->
-    <div class="IntroWrapper">
+    <article class="IntroWrapper">
       <p class="IntroText">
         <em
           >Occasionally misunderstood; the scone is a quintessentially British
@@ -36,8 +36,9 @@
           </figcaption>
         </figure>
       </div>
-    </div>
+    </article>
     <!-- Recipe -->
+    <section>
     <p>Recipe and serving suggestions follow</p>
     <div class="Ingredients">
       <h3 class="SubHeader">Ingredients</h3>
@@ -59,6 +60,7 @@
         <li>Method 5</li>
       </ol>
     </div>
+    </section>
     <!-- Paragraph examples -->
     <p>
       Hey, I am a paragraph of this web page. Paragraphs are block elements.
@@ -69,6 +71,7 @@
     </p>
     <hr />
     <!-- Skills -->
+    <section>
     <p>My skills include:</p>
     <ul>
       <li>Fast typing.</li>
@@ -77,8 +80,10 @@
       <li>Negotiating with officers of the peace.</li>
     </ul>
     <p>And I also know HTML!</p>
+    </section>
     <!-- Work experience -->
-    <h2>Previous Work Experience</h2>
+    <section>
+    <h2 class="SubHeader">Previous Work Experience</h2>
     <p>
       I have had a long and illustrious career in a variety of trades. Here are
       some highlights:
@@ -97,6 +102,7 @@
       <a href="http://www.missingmanuals.com" target="blank_">Click here!</a
       >(http://www.missingmanuals.com)
     </p>
+    </section>
     <hr />
     <!-- divs and spans -->
     <div>
@@ -117,6 +123,7 @@
     >
     <hr />
     <!-- Quotes -->
+    <section>
     <p>Some words of wisdom from "A Tale of Two Cities":</p>
     <blockquote>
       <p>
@@ -147,16 +154,20 @@
       The quote <q>It was the best of times, it was the worst of times</q> is
       from <cite>A Tale of Two Cities</cite>. (Includes cite element)
     </p>
+    </section>
     <hr />
     <!-- Box Model -->
+    <section>
     <p class="BoxModel">
       When determining the space used by an element, remember to include the
       border width. For example of the padding is set to 10px, the margin set to
       5px, and the border-width set to 3px, the space used (in addition to the
       actual element content) will be (2 * 10)+(2 * 5)+(2 * 3)=36px.
     </p>
+    </section>
     <hr />
-    <h2>The Noble Eightfold Path</h2>
+    <section>
+    <h2 class="SubHeader">The Noble Eightfold Path</h2>
     <ol type="I">
       <li>Right View Wisdom</li>
       <li>Right Intention</li>
@@ -181,8 +192,10 @@
       <li></li>
       <li></li>
     </ol>
+    </section>
     <hr />
     <!-- Definition List -->
+    <section>
     <dl>
       <dt>Dictionary Term 1</dt>
       <dd>Dictionary Definition 1.</dd>
@@ -191,8 +204,10 @@
       <dt>Dictionary Term 3</dt>
       <dd>Dictionary Definition 3.</dd>
     </dl>
+    </section>
     <hr />
-    <h2>Squared Circle Nested List</h2>
+    <section>
+    <h2 class="SubHeader">Squared Circle Nested List</h2>
     <ul type="square">
       <li>
         Monday
@@ -221,20 +236,102 @@
       </li>
       <li>Wednesday ...</li>
     </ul>
+    </section>
     <hr />
     <!-- Symbol Cards -->
+    <section>
     <a href="#" class="CardLink CardLink_Hearts">Hearts</a>
     <a href="#" class="CardLink CardLink_Clubs">Clubs</a>
     <a href="#" class="CardLink CardLink_Spades">Spades</a>
     <a href="#" class="CardLink CardLink_Diamonds">Diamonds</a>
     <a href="#" class="CardLink CardLink_Corporal">Corporal</a>
     <a href="#" class="CardLink CardLink_Omega">Omega</a>
+    </section>
+    <hr />
+    <!-- Fluid Layout Example -->
+    <div class="Wrap">
+      <div class="Header2">Header2</div>
+      <div class="WrapMiddle">
+        <div class="Left">Middle Left</div>
+        <div class="Middle">Middle Middle</div>
+        <div class="Right">Middle Right</div>
+      </div>
+      <div class="Footer">Footer</div>
+    </div>
+    <!-- Tables -->
+    <section>
+    <table>
+      <tbody>
+        <tr>
+          <th>Rank (table header)</th>
+          <th>Name (table header)</th>
+          <th>Population (table header)</th>
+        </tr>
+        <tr>
+          <td>1 (table data)</td>
+          <td>Rome (table data)</td>
+          <td>450,000 (table data)</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Luoyang (Honan), China</td>
+          <td>420,000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Seleucia (on the Tigris), Iraq</td>
+          <td>250,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+          <th>Column 4</th>
+        </tr>
+        <tr>
+          <!-- This fills column 1 -->
+          <td>&nbsp;</td>
+          <!-- This fills columns 2 and 3 -->
+          <td colspan="2">Look out, this cell spans two columns!(3 & 4)</td>
+          <!-- This fills column 4 -->
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td rowspan="2">This cell spans two rows.</td>
+          <td>Row 3 Col 2</td>
+          <td>Row 3 Col 3</td>
+          <td>Row 3 Col 4</td>
+        </tr>
+        <tr>
+          <td>Row 4 Col 2</td>
+          <td>Row 4 Col 3</td>
+          <td>Row 4 Col 4</td>
+        </tr>
+        <tr>
+          <td>Row 5 Col 1</td>
+          <td rowspan="2" colspan="2">
+            This cell spans two rows and two columns.
+          </td>
+          <td>Row 5 Col 4</td>
+        </tr>
+        <tr>
+          <td>Row 6 Col 1</td>
+          <td>Row 6 Col 4</td>
+        </tr>
+      </tbody>
+    </table>
+    </section>
+    <hr />
     <!-- Footer -->
     <footer>
-      <div id="footer">
-        <p>Copyright 2020, <span class="bizName">SuperCo.com</span></p>
-        <p>Call customer service at 555-555-55501 for more information.</p>
-      </div>
+      <p>
+        <small>Copyright 2020, <span class="bizName">SuperCo.com</span></small>
+      </p>
+      <p>Call customer service at 555-555-55501 for more information.</p>
     </footer>
   </body>
 </html>
