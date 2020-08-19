@@ -10,19 +10,34 @@ body {
   margin: 0 auto;
   border-radius: 6.25px;
   box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.5);
-  font-family: Verdana, Arial, sans-serif;
+  font-family: "Metrophobic", arial, serif;
   font-size: 12px;
 }
 
 h1 {
   color: #ff7643;
-  font-family: Arial;
-  font-size: 2.5em;
+  font-family: "Varela Round", "Arial Black", serif;
+  font-weight: normal;
+  font-size: 3em;
   margin: 0;
   text-align: center;
   border-style: double;
   border-radius: 25px;
   background-color: blue;
+}
+
+h3 {
+  color: blue;
+}
+
+h2 {
+  color: #b1967c;
+  font-family: "Varela Round", "Arial Black", serif;
+  font-weight: normal;
+  font-size: 2.2em;
+  border-bottom: 2px white solid;
+  padding: 0 0 2px 60px;
+  margin: 0;
 }
 
 li {
@@ -45,7 +60,6 @@ img {
   or a div it sits within) is less than the intrinsic width of
   the image, it will simply scale up to the max available 
   space.*/
-  border-radius: 50%;
   border: 2px solid #e8cfa9;
 }
 
@@ -53,9 +67,31 @@ img {
 is used the image will be displayed at 100% of the parent container/element 
 size.*/
 
+table {
+  border-width: 3px;
+  border-style: solid;
+  border-color: blue;
+}
+
+td,
+th {
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+}
+
 blockquote p {
   text-align: justify;
   padding: 0 5px;
+}
+
+p,
+address {
+  font-size: 1.25em;
+  color: #616161;
+  line-height: 150%;
+  margin-top: 10px;
+  margin-left: 60px;
 }
 
 .Header {
@@ -71,6 +107,10 @@ blockquote p {
 
 .SubHeader {
   text-decoration: underline;
+}
+
+.MoneyShotImg {
+  border-radius: 50%;
 }
 
 .BoxModel {
@@ -179,14 +219,94 @@ blockquote p {
   background-color: #025059;
 }
 
-h2,
-h3 {
-  color: blue;
+.DottedBox {
+  border-style: dotted;
+  border-width: 2px;
+  background-color: #fdf5e6;
+  margin: 20px;
+  padding: 20px;
+}
+
+.DashedBox {
+  border-style: dashed;
+  border-width: 2px;
+  background-color: #fdf5e6;
+  margin: 20px;
+  padding: 20px;
+}
+
+.SolidBox {
+  border-style: solid;
+  border-width: 5px;
+  background-color: #fdf5e6;
+  margin: 20px;
+  padding: 20px;
+}
+
+.DoubleBorderBox {
+  border-style: double;
+  border-width: 4px;
+  background-color: #fdf5e6;
+  margin: 20px;
+  padding: 20px;
+}
+
+.GrooveBox {
+  border-style: groove;
+  border-width: 5px;
+  background-color: #fdf5e6;
+  margin: 20px;
+  padding: 20px;
+}
+
+.RidgeBox {
+  border-style: ridge;
+  border-width: 5px;
+  background-color: #fdf5e6;
+  margin: 20px;
+  padding: 20px;
+}
+
+.btn {
+  border-radius: 5px;
+  font-family: Arial, Helvetica, serif;
+  font-size: 0.8 em;
+}
+
+.delete {
+  background-color: red;
+}
+.add {
+  background-color: green;
+}
+.edit {
+  background-color: grey;
+}
+
+.copyright {
+  color: #f1cd33;
 }
 
 .Header p /* any p within the Header class */ {
   color: red;
   background: none;
+}
+
+.news h2 {
+  color: red;
+}
+.news p {
+  color: blue;
+}
+
+.contact .name {
+  font-weight: bold;
+}
+.contact .phone {
+  color: blue;
+}
+.contact .address {
+  color: red;
 }
 
 @media (min-width: 50em) {
