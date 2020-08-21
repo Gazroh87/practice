@@ -1,6 +1,7 @@
 html {
   padding: 25px 0;
-  background-image: url(images/bg_page.jpg);
+  background-image: url("../images/steelCage1.png");
+  background-attachment: fixed;
 }
 
 body {
@@ -50,7 +51,7 @@ p {
   line-height: 150%;
   margin-top: 6px;
   margin-left: 10%;
-  background-color: lime;
+  /* background-color: lime; */
 }
 
 img {
@@ -73,16 +74,15 @@ table {
   border-color: blue;
 }
 
+ul {
+  overflow: hidden;
+}
+
 td,
 th {
   border-width: 1px;
   border-style: solid;
   border-color: red;
-}
-
-blockquote p {
-  text-align: justify;
-  padding: 0 5px;
 }
 
 p,
@@ -92,6 +92,49 @@ address {
   line-height: 150%;
   margin-top: 10px;
   margin-left: 60px;
+}
+
+blockquote p {
+  text-align: justify;
+  padding: 0 5px;
+}
+
+.MenuWrap {
+  background-color: indigo;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  /* flex-direction: row-reverse; to reverse the menu order*/
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.MenuWrap2 {
+  background-color: indigo;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column-reverse; to reverse the menu order*/
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.ListItem,
+.LastItem {
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+.ListItem {
+  margin-right: 1rem;
+}
+
+.LastItem {
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 .Header {
@@ -283,6 +326,45 @@ address {
   background-color: grey;
 }
 
+.pie {
+  background-image: url("../images/diamondPlate.jpg");
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 10px;
+  border-style: double;
+  border-width: 3px;
+  color: white;
+  background-color: black;
+  font-size: large;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
+
+.CenterMe {
+  background-color: indigo;
+  color: #ebebeb;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InlineFlex {
+  display: inline-flex;
+  align-items: center;
+  height: 120px;
+  padding: 0 4px;
+  background-color: indigo;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #ddd;
+}
+
 .copyright {
   color: #f1cd33;
 }
@@ -307,6 +389,11 @@ address {
 }
 .contact .address {
   color: red;
+}
+
+#instructions {
+  /* Makes the image not overflow off the page and stay within the div */
+  overflow: hidden;
 }
 
 @media (min-width: 50em) {
@@ -366,6 +453,18 @@ address {
     width: 10.4166667%;
     left: 0;
     position: relative;
+  }
+}
+
+@media (min-width: 32em) {
+  .MenuWrap2 {
+    flex-direction: row;
+  }
+  .ListItem {
+    margin-right: 1rem;
+  }
+  .LastItem {
+    margin-left: auto;
   }
 }
 

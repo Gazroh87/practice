@@ -10,10 +10,36 @@
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>HTML5 Sample Document (I am the title of this web page)</title>
-    <style></style>
+    <style>
+      .FloatLeft {
+        float: left;
+        margin: 10px;
+      }
+      img.FloatRight {
+        float: right;
+        margin: 10px;
+        border-style: groove;
+        border-width: 3px;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="MenuWrap">
+      <a href="index.html" class="ListItem">Home</a>
+      <a href="#" class="ListItem">About Us</a>
+      <a href="#" class="ListItem">Products</a>
+      <a href="#" class="ListItem">Policy</a>
+      <a href="#" class="LastItem">Contact Us</a>
+    </div>
+    <br />
+    <div class="MenuWrap2">
+      <a href="index.html" class="ListItem">Home</a>
+      <a href="#" class="ListItem">About Us</a>
+      <a href="#" class="ListItem">Products</a>
+      <a href="#" class="ListItem">Policy</a>
+      <a href="#" class="LastItem">Contact Us</a>
+    </div>
     <!-- Header -->
     <div class="Header">
       <h1 style="font-size: 2.5em;">Hire Me!(h1)</h1>
@@ -41,7 +67,7 @@
         </figure>
       </div>
     </article>
-    <!-- Recipe -->
+    <!-- Scones Recipe -->
     <section>
       <p>Recipe and serving suggestions follow</p>
       <div class="Ingredients">
@@ -508,10 +534,18 @@
       <p class="RidgeBox">There is a ridge border around this text.</p>
     </section>
     <hr />
-    <!-- iframe -->
-    <iframe src="https://www.apress.com" width="100%" height="400">
+    <!-- iframes -->
+    <!-- Website example <iframe src="https://www.apress.com" width="100%" height="400">
       <p>Your browser does not support iframes</p>
-    </iframe>
+    </iframe> -->
+    <!-- Youtube video example <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/JtQbh4nHd6g"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe> -->
     <!-- Abbreviation -->
     <p>
       The use of <abbr title="Hypertext Markup Language">HTML</abbr> has
@@ -539,8 +573,15 @@
       <img src="assets/images/html5.jpg" alt="The HTML5 Badge logo" />
     </a>
     <hr />
-    <audio src="Media/Linus and Lucy.mp3" autoplay controls></audio>
+    <!-- audio and video players -->
+    <audio src="" autoplay controls></audio>
+    <!-- Add downloaded audio file -->
+    <video src="" autoplay>
+      <!-- Add downloaded video file -->
+      <p>HTML5 video is not supported on your browser</p>
+    </video>
     <p><img src="assets/images/banana.jpg" alt="A single banana" /></p>
+    <!-- buttons -->
     <div class="btnGroup">
       <button class="btn add">Add</button>
       <button class="btn delete">Delete</button>
@@ -559,7 +600,17 @@
       <p class="phone">555-555-1234</p>
       <p class="address">1234 Elem St</p>
     </div>
+    <hr />
+    <!-- Tomato Soup Recipe -->
     <h2>Simple Tomato Soup</h2>
+    <figure class="FloatLeft">
+      <img src="assets/images/tomatoSoup.jpg" alt="A bowl of tomato soup" />
+      <br />
+      <i>A bowl of rustic tomato soup</i>
+    </figure>
+    <p class="Description">
+      A simple, nourishing soup that showcases fresh tomatoes.
+    </p>
     <ul>
       <li>2 carrots</li>
       <li>2 sticks celery</li>
@@ -567,6 +618,14 @@
       <li>1 tsp salt</li>
       <li>3 lbs tomatoes, peeled</li>
       <li>a few mint leaves</li>
+    </ul>
+    <br style="clear: both;" />
+    <div id="instructions">
+      <img
+        src="assets/images/tomatoSoup.jpg"
+        alt="A bowl of tomato soup"
+        class="FloatRight"
+      />
       <p>
         Roughly chop the carrots, celery, and onions. The mixture doesn't need
         to be perfectly chopped, because you'll puree it later.
@@ -590,7 +649,22 @@
         Bring soup back to simmer, then taste and correct seasonings if
         necessary.
       </p>
-    </ul>
+    </div>
+    <div class="pie">
+      <p>Hungry for some pie?</p>
+    </div>
+    <div class="CenterMe">
+      Hello, I'm centered with Flexbox!
+    </div>
+    <p>
+      Here is a sentence with a
+      <a
+        href="http://www.w3.org/TR/css- flexbox-#flex-containers"
+        class="InlineFlex"
+      >
+        inline-flex link.
+      </a>
+    </p>
     <!-- Footer -->
     <footer>
       <address>
