@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Gary R Hughes" />
+    <title>HTML5 Sample Document (I am the title of this web page)</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Varela+Round&display=swap"
       rel="stylesheet"
@@ -22,6 +24,10 @@
         border-width: 3px;
       }
     </style>
+    <script
+      src="https://kit.fontawesome.com/ea1959dd8c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -284,14 +290,14 @@
     <hr />
     <section>
       <h2 class="SubHeader">Squared Circle Nested List</h2>
-      <ul type="square">
+      <ul class="square">
         <li>
           Monday
           <ol>
             <li>Plan schedule for week</li>
             <li>
               Complete Project X
-              <ul type="circle">
+              <ul class="circle">
                 <li>Preliminary Interview</li>
                 <li>Wild Hypothesis</li>
                 <li>Final Report</li>
@@ -653,6 +659,7 @@
     <div class="pie">
       <p>Hungry for some pie?</p>
     </div>
+    <!-- Flexbox -->
     <div class="CenterMe">
       Hello, I'm centered with Flexbox!
     </div>
@@ -665,6 +672,279 @@
         inline-flex link.
       </a>
     </p>
+    <div class="FlexWrapper">
+      <div class="FlexInner">I am content in the inner Flexbox 1.</div>
+      <div class="FlexInner AlignSelfFlexEnd">
+        I am content in the inner Flexbox 2.
+      </div>
+      <div class="FlexInner">I am content in the inner Flexbox 3.</div>
+    </div>
+    <br />
+    <div class="FlexWrapper">
+      <div class="FlexInner">I am content in the inner Flexbox 1.</div>
+      <div class="FlexInner AlignSelfFlexStart">
+        I am content in the inner Flexbox 2.
+      </div>
+      <div class="FlexInner">I am content in the inner Flexbox 3.</div>
+    </div>
+    <br />
+    <div class="FlexWrapper">
+      <div class="FlexInner">I am content in the inner Flexbox 1.</div>
+      <div class="FlexInner AlignSelfCenter">
+        I am content in the inner Flexbox 2.
+      </div>
+      <div class="FlexInner">I am content in the inner Flexbox 3.</div>
+    </div>
+    <br />
+    <div class="FlexWrapper">
+      <div class="FlexInner">I am content in the inner Flexbox 1.</div>
+      <div class="FlexInner AlignSelfBaseline">
+        I am content in the inner Flexbox 2.
+      </div>
+      <div class="FlexInner">I am content in the inner Flexbox 3.</div>
+    </div>
+    <br />
+    <div class="FlexWrapper">
+      <div class="FlexInner">I am content in the inner Flexbox 1.</div>
+      <div class="FlexInner AlignSelfStretch">
+        I am content in the inner Flexbox 2.
+      </div>
+      <div class="FlexInner">I am content in the inner Flexbox 3.</div>
+    </div>
+    <br />
+    <div class="FlexWrapper2">
+      <div class="FlexInner">I am content in the inner Flexbox 1.</div>
+      <div class="FlexInner">I am content in the inner Flexbox 2.</div>
+      <div class="FlexInner">I am content in the inner Flexbox 3.</div>
+    </div>
+    <br />
+    <div class="FlexWrapper3">
+      <div class="FlexInner">I am content in the inner Flexbox 1.</div>
+      <div class="FlexInner">I am content in the inner Flexbox 2.</div>
+      <div class="FlexInner">I am content in the inner Flexbox 3.</div>
+    </div>
+    <br />
+    <div class="FlexWrapper4">
+      <div class="FlexInner">I am content in the inner Flexbox 1.</div>
+      <div class="FlexInner">I am content in the inner Flexbox 2.</div>
+      <div class="FlexInner">I am content in the inner Flexbox 3.</div>
+    </div>
+    <br />
+    <div class="FlexWrapper">
+      <div class="FlexItems FlexOne">
+        I am content in the inner Flexbox 1. This Flexbox is 1.5x wider than the
+        other 2.
+      </div>
+      <div class="FlexItems FlexTwo">I am content in the inner Flexbox 2.</div>
+      <div class="FlexItems FlexThree">
+        I am content in the inner Flexbox 3.
+      </div>
+    </div>
+    <hr />
+    <!-- Forms -->
+    <form action="" method="get">
+      <label for="iFirstName">First Name:</label>
+      <input id="iFirstName" type="text" />
+      <label for="iLastName">Last Name:</label>
+      <input id="iLastName" type="text" />
+      <datalist id="sports">
+        <option value="Baseball" />
+        <option value="Basketball" />
+        <option value="Hockey" />
+        <option value="Football" />
+      </datalist>
+      <label for="iSport">Favorite Sport:</label>
+      <input type="text" id="iSport" name="Sport" list="sports" />
+      <input
+        type="email"
+        name="Email"
+        size="100"
+        placeholder="enter 1 or more email addresses"
+        multiple
+        required
+      />
+      <input
+        type="password"
+        name="Password"
+        maxlength="12"
+        minlength="6"
+        size="12"
+      />
+      <input
+        type="search"
+        name="Search"
+        placeholder="search criteria..."
+        autofocus
+      />
+      <input
+        type="tel"
+        name="Phone"
+        placeholder="(800) 555-1212"
+        pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+      />
+      <input
+        type="url"
+        name="Website"
+        placeholder="http://www.apress.com"
+        size="50"
+      />
+      <input type="text" value="Read-only text" readonly name="ReadOnly" />
+      <input type="text" value="Disabled text" disabled />
+      <label for="iComments">Comments:</label>
+      <textarea
+        id="iComments"
+        rows="3"
+        cols="50"
+        wrap="hard"
+        maxlength="250"
+        name="Comments"
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <form>
+      <p>
+        Toppings:
+        <input
+          type="checkbox"
+          name="Topping"
+          value="Mushrooms"
+          checked
+        />Mushrooms?
+        <input type="checkbox" name="Topping" value="Sausage" />Sausage?
+        <input type="checkbox" name="Topping" value="Olives" />Olives?
+      </p>
+      <p>
+        Crust: <input type="radio" name="Crust" value="Thin" required />Thin
+        <input type="radio" name="Crust" value="Thick" />Thick
+        <input type="radio" name="Crust" value="DeepDish" />Deep Dish
+      </p>
+      <input type="submit" value="Submit" />
+    </form>
+    <form>
+      <p>
+        Do you understand the terms and conditions?
+        <input type="checkbox" name="Topping" value="Yes" required />Yes
+        <input type="checkbox" name="Topping" value="No" />No
+      </p>
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      Addons:
+      <select name="Addons" required>
+        <option value="">Please select...</option>
+        <option value="None">Pizza only</option>
+        <optgroup label="Addons">
+          <option value="Wings">Side of Buffalo Wings</option>
+          <option value="GarlicBread">Add Garlic Bread</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>
+      Toppings:
+      <select name="Toppings" multiple size="4">
+        <option label="Mushrooms?" value="Mushrooms"></option>
+        <option label="Sausage?" value="Sausage"></option>
+        <option label="Olives?" value="Olives"></option>
+        <option label="Chicken?" value="Chicken"></option>
+        <option label="Pepperoni?" value="Pepperoni"></option>
+      </select>
+    </p>
+    <p>
+      Number of utensils:
+      <input type="number" min="1" max="4" value="1" name="Utensils" />
+    </p>
+    <p>
+      Color picker:
+      <input type="color" />
+    </p>
+    <p>
+      Select audio file to upload:
+      <input type="file" name="music" accept="audio/*" />
+      Select image(s) to upload:
+      <input type="file" name="pictures" multiple accept=".jpg, .png" />
+    </p>
+    <datalist id="SurveyStops">
+      <option value="0" />
+      <option value="10" />
+      <option value="20" />
+      <option value="30" />
+      <option value="40" />
+      <option value="50" />
+    </datalist>
+    <p>
+      How satisfied were you with the ordering process?
+      <input
+        type="range"
+        name="Survey"
+        min="0"
+        max="50"
+        step="10"
+        list="SurveyStops"
+      />
+    </p>
+    <p>
+      Date:
+      <input
+        type="date"
+        name="Date"
+        min="2016-08-06"
+        max="2016-08-11"
+        placeholder="mm/dd/yy"
+      />
+      Date/Time:
+      <input
+        type="datetime-local"
+        name="DateTime"
+        step="30"
+        placeholder="mm/dd/yy hh:mm:ss AM"
+      />
+      Time:
+      <input
+        type="time"
+        name="Time"
+        min="10:00:00"
+        max="17:00:00"
+        step="15"
+        placeholder="hh:mm:ss AM"
+      />
+      Month:
+      <input
+        type="month"
+        name="Month"
+        min="2016-01-01"
+        max="2017-12-31"
+        placeholder="yyyy-mm"
+      />
+      Week:
+      <input
+        type="week"
+        name="Week"
+        min="2016-01-01"
+        max="2017-12-31"
+        placeholder="yyyy-W##"
+      />
+    </p>
+    <p>
+      Deliver to: <br />
+      <label>
+        Address:
+        <input type="text" size="30" name="Address" />
+      </label>
+      <label>
+        ZipCode:
+        <input type="text" maxlength="5" size="5" name="Zip" />
+      </label>
+      <label for="telephone">Phone #:</label>
+      <input type="tel" id="telephone" name="Phone" />
+    </p>
+    <p>
+      <label
+        >Total due:
+        <output id="total" name="Total">$0.00</output>
+      </label>
+    </p>
+    <br />
     <!-- Footer -->
     <footer>
       <address>

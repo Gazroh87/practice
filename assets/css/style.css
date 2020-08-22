@@ -41,9 +41,9 @@ h2 {
   margin: 0;
 }
 
-li {
+/* li {
   font-style: italic;
-}
+} */
 
 p {
   font-size: 12.5px;
@@ -76,6 +76,7 @@ table {
 
 ul {
   overflow: hidden;
+  list-style-type: none;
 }
 
 td,
@@ -92,6 +93,11 @@ address {
   line-height: 150%;
   margin-top: 10px;
   margin-left: 60px;
+}
+
+footer {
+  background-color: violet;
+  padding: 0.5rem;
 }
 
 blockquote p {
@@ -132,10 +138,9 @@ blockquote p {
   margin-right: 1rem;
 }
 
-.LastItem {
+/* .LastItem {
   /* margin-left: auto; */
-  /* margin-right: auto; */
-}
+/* margin-right: auto; } */
 
 .Header {
   padding: 1rem;
@@ -365,6 +370,100 @@ blockquote p {
   color: #ddd;
 }
 
+.FlexWrapper {
+  background-color: indigo;
+  display: flex;
+  height: 200px;
+  width: 100%;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.FlexWrapper2 {
+  background-color: indigo;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+}
+
+.FlexWrapper3 {
+  background-color: indigo;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+}
+
+.FlexWrapper4 {
+  background-color: indigo;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
+
+.FlexInner {
+  background-color: #34005b;
+  display: flex;
+  height: 100px;
+  width: 200px;
+  color: #ebebeb;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+}
+
+.AlignSelfFlexEnd {
+  align-self: flex-end;
+}
+
+.AlignSelfFlexStart {
+  align-self: flex-start;
+}
+
+.AlignSelfCenter {
+  align-self: center;
+}
+
+.AlignSelfBaseline {
+  align-self: baseline;
+}
+
+.AlignSelfStretch {
+  align-self: stretch;
+}
+
+.FlexItems {
+  border: 1px solid #ebebeb;
+  background-color: #34005b;
+  display: flex;
+  height: 100px;
+  width: 25%;
+}
+
+.FlexOne {
+  flex: 1.5 0 auto;
+  color: #ebebeb;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+}
+
+.FlexTwo,
+.FlexThree {
+  flex: 1 0 auto;
+  color: #ebebeb;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+}
+
+.square {
+  list-style-type: square;
+}
+
+.circle {
+  list-style-type: circle;
+}
+
 .copyright {
   color: #f1cd33;
 }
@@ -394,6 +493,21 @@ blockquote p {
 #instructions {
   /* Makes the image not overflow off the page and stay within the div */
   overflow: hidden;
+}
+
+input:focus {
+  background-color: #ffffcc;
+}
+
+ul li::before {
+  content: "\f1e3";
+  font-family: "Font Awesome 5 Free";
+  padding: 0 10px 0 0;
+}
+
+.square li::before,
+.circle li::before {
+  content: none;
 }
 
 @media (min-width: 50em) {
@@ -450,7 +564,7 @@ blockquote p {
   }
 
   .Right {
-    width: 10.4166667%;
+    width: 10.609%;
     left: 0;
     position: relative;
   }
