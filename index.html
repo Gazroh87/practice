@@ -31,26 +31,29 @@
   </head>
 
   <body>
+    <!-- Menus -->
     <div class="MenuWrap">
-      <a href="index.html" class="ListItem">Home</a>
-      <a href="#" class="ListItem">About Us</a>
-      <a href="#" class="ListItem">Products</a>
-      <a href="#" class="ListItem">Policy</a>
-      <a href="#" class="LastItem">Contact Us</a>
+      <a href="index.html" class="ListItem BackwardLink">Home</a>
+      <a href="about.html" class="ListItem BackwardLink">About Me</a>
+      <a href="arctic.html" class="ListItem BackwardLink">Arctic</a>
+      <a href="china.html" class="ListItem BackwardLink">China</a>
+      <a href="#" class="ListItem BackwardLink">Policy</a>
+      <a href="#" class="LastItem BackwardLink">Contact Us</a>
     </div>
     <br />
     <div class="MenuWrap2">
-      <a href="index.html" class="ListItem">Home</a>
-      <a href="#" class="ListItem">About Us</a>
-      <a href="#" class="ListItem">Products</a>
-      <a href="#" class="ListItem">Policy</a>
-      <a href="#" class="LastItem">Contact Us</a>
+      <a href="index.html" class="ListItem BackwardLink">Home</a>
+      <a href="about.html" class="ListItem BackwardLink">About Me</a>
+      <a href="arctic.html" class="ListItem BackwardLink">Arctic</a>
+      <a href="china.html" class="ListItem BackwardLink">China</a>
+      <a href="#" class="ListItem BackwardLink">Policy</a>
+      <a href="#" class="LastItem BackwardLink">Contact Us</a>
     </div>
     <!-- Header -->
     <div class="Header">
       <h1 style="font-size: 2.5em;">Hire Me!(h1)</h1>
       <h6>Hello World!(h6)</h6>
-      <p>Scones: the most resplendent of snacks(p)</p>
+      <p class="sconebefore">the most resplendent of snacks(p)</p>
     </div>
     <!-- Intro including hero image -->
     <article class="IntroWrapper">
@@ -98,48 +101,13 @@
       </div>
     </section>
     <!-- Paragraph examples -->
-    <p>
+    <p class="tip">
       Hey, I am a paragraph of this web page. Paragraphs are block elements.
     </p>
-    <p>
+    <p class="tip">
       I am another paragraph. I am Gary Hughes. Hire me for your company,
       because my work is <strong>off the hizzle</strong>.
     </p>
-    <hr />
-    <!-- Skills -->
-    <section>
-      <p>My skills include:</p>
-      <ul>
-        <li>Fast typing.</li>
-        <li>Extraordinary pencil sharpening.</li>
-        <li>Inventive excuse making.</li>
-        <li>Negotiating with officers of the peace.</li>
-      </ul>
-      <p>And I also know HTML!</p>
-    </section>
-    <!-- Work experience -->
-    <section>
-      <h2 class="SubHeader">Previous Work Experience</h2>
-      <p>
-        I have had a long and illustrious career in a variety of trades. Here
-        are some highlights:
-      </p>
-      <ul>
-        <li>2008-2009 - Worked as a typist at <em>Flying Fingers</em></li>
-        <li>
-          2010-2013 - Performed cutting-edge web design at
-          <em>Riverdale Farm</em>
-        </li>
-        <li>
-          2014-2015 - Starred in Chapter 1 of
-          <em>Creating a Website: The Missing Manual</em>
-        </li>
-      </ul>
-      <p>
-        <a href="http://www.missingmanuals.com" target="blank_">Click here!</a
-        >(http://www.missingmanuals.com)
-      </p>
-    </section>
     <hr />
     <!-- divs and spans -->
     <div>
@@ -527,7 +495,7 @@
         Click to collapse/hide the text.
       </summary>
       <h1>Details</h1>
-      <p>These are collapsable details</p>
+      <p class="tip">These are collapsable details</p>
     </details>
     <hr />
     <!-- Border Boxes -->
@@ -553,7 +521,7 @@
       allowfullscreen
     ></iframe> -->
     <!-- Abbreviation -->
-    <p>
+    <p class="tip">
       The use of <abbr title="Hypertext Markup Language">HTML</abbr> has
       contributed greatly to the popularity of web-based applications. <br />
     </p>
@@ -663,7 +631,7 @@
     <div class="CenterMe">
       Hello, I'm centered with Flexbox!
     </div>
-    <p>
+    <p class="tip">
       Here is a sentence with a
       <a
         href="http://www.w3.org/TR/css- flexbox-#flex-containers"
@@ -945,6 +913,10 @@
       </label>
     </p>
     <br />
+    <p>Learn more <a href="about.html">about me</a>.</p>
+    <br />
+    <p>See pictures from <a href="arctic.html">The Artic</a>.</p>
+    <p>See pictures from <a href="china.html">China</a>.</p>
     <!-- Footer -->
     <footer>
       <address>
@@ -955,6 +927,10 @@
         </p>
       </address>
       <p>Call customer service at 555-555-55501 for more information.</p>
+      <a
+        href="mailto:gary.hughes87@virginmedia.com?subject=Subject%20box%20text&body=Body%20box%20text."
+        >Email Me</a
+      >
     </footer>
   </body>
 </html>

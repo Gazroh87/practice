@@ -100,9 +100,48 @@ footer {
   padding: 0.5rem;
 }
 
+/* Links are this colour by default */
+a {
+  color: fuchsia;
+}
+
+/* Offsite links */
+a:link {
+  color: red;
+}
+
+/* Visited links */
+a:visited {
+  color: blue;
+}
+
+a.BackwardLink:link {
+  color: white;
+}
+
+a.BackwardLink:visited {
+  color: white;
+}
+
 blockquote p {
   text-align: justify;
   padding: 0 5px;
+}
+
+.sconebefore:before {
+  content: "Scones: ";
+  background-color: olivedrab;
+  color: white;
+  padding: 5px;
+  font-weight: 700;
+}
+
+.tip:before {
+  content: "HOT TIP!";
+  background-color: olivedrab;
+  color: white;
+  padding: 5px;
+  font-weight: 700;
 }
 
 .MenuWrap {
