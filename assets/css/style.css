@@ -115,12 +115,24 @@ a:visited {
   color: blue;
 }
 
-a.BackwardLink:link {
+a:hover {
+  color: yellow;
+}
+
+a.ListItem:link {
   color: white;
 }
 
-a.BackwardLink:visited {
+a.ListItem:visited {
   color: white;
+}
+
+a.ListItem.active {
+  color: orangered;
+}
+
+a.ListItem:hover {
+  color: yellow;
 }
 
 blockquote p {
@@ -549,6 +561,53 @@ ul li::before {
   content: none;
 }
 
+/* attribute selector */
+img[title="scones"],
+img[title="banana"],
+img[title="tomatoSoup"] {
+  border-style: groove;
+  border-width: 3px;
+}
+
+.FlexWrapper5 {
+  background-color: indigo;
+  display: flex;
+  flex-direction: column;
+}
+
+.FlexItems2 {
+  display: flex;
+  align-items: center;
+  min-height: 6.25rem;
+  padding: 1rem;
+}
+
+.FlexHeader {
+  background-color: #105b63;
+  order: 1;
+}
+
+.FlexContent {
+  background-color: #fffad5;
+  /* order: -1; moves this flexbox to display before all others in the flexbox wrapper */
+  order: 2;
+}
+
+.FlexSideOne {
+  background-color: #ffd34e;
+  order: 3;
+}
+
+.FlexSideTwo {
+  background-color: #db9e36;
+  order: 4;
+}
+
+.FlexFooter {
+  background-color: #bd4932;
+  order: 5;
+}
+
 @media (min-width: 50em) {
   /* styles within the media query */
   img {
@@ -618,6 +677,30 @@ ul li::before {
   }
   .LastItem {
     margin-left: auto;
+  }
+}
+
+@media (min-width: 30rem) {
+  .FlexWrapper5 {
+    flex-flow: row wrap; /* Allows flex items to wrap onto multiple lines */
+  }
+  .FlexHeader {
+    width: 100%;
+  }
+  .FlexContent {
+    flex: 1;
+    order: 3;
+  }
+  .FlexSideOne {
+    width: 150px;
+    order: 2;
+  }
+  .FlexSideTwo {
+    width: 150px;
+    order: 4;
+  }
+  .FlexFooter {
+    width: 100%;
   }
 }
 
