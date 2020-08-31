@@ -46,7 +46,7 @@ h2 {
 } */
 
 p {
-  font-size: 12.5px;
+  font-size: 16px;
   color: #616161;
   line-height: 150%;
   margin-top: 6px;
@@ -93,6 +93,11 @@ address {
   line-height: 150%;
   margin-top: 10px;
   margin-left: 60px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
@@ -546,6 +551,24 @@ blockquote p {
   overflow: hidden;
 }
 
+#wrapper {
+  margin: 0 auto;
+}
+#sidebar {
+  width: 32%;
+  background-color: sienna;
+  height: 625px;
+  display: inline-block;
+  margin-right: -4.5px;
+}
+#main {
+  width: 68%;
+  background-color: maroon;
+  height: 625px;
+  display: inline-block;
+  margin-left: -4.5px;
+}
+
 input:focus {
   background-color: #ffffcc;
 }
@@ -701,6 +724,18 @@ img[title="tomatoSoup"] {
   }
   .FlexFooter {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  p {
+    font-size: 11px;
   }
 }
 
