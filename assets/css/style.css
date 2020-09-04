@@ -631,6 +631,46 @@ img[title="tomatoSoup"] {
   order: 5;
 }
 
+.childSelectHead {
+  border-top: sandybrown dashed 2px;
+  border-bottom: sandybrown dashed 2px;
+}
+
+.childSelect div {
+  display: inline-block;
+  width: 20%;
+}
+
+.childSelect h3 {
+  padding-inline-start: 40px;
+  margin-bottom: 1px;
+}
+
+.childSelect ul {
+  margin-top: 1px;
+}
+
+.childSelect ul li {
+  border-bottom: 1px solid black;
+}
+
+.liFirstChild li:first-child,
+.liLastChild li:last-child,
+.liOddChild li:nth-child(odd),
+.liEvenChild li:nth-child(even),
+.li2ndChild li:nth-child(2),
+.li5thChild li:nth-child(5),
+.liEvery3rdChild li:nth-child(3n),
+.liEvery2ndChild li:nth-child(2n),
+.li1stChildof3 li:nth-child(3n + 1),
+.li2ndChildof4 li:nth-child(4n + 2),
+.liChildAfter2nd li:nth-child(n + 3),
+.liChild3 li:nth-child(-n + 3) {
+  color: red;
+  border: 2px solid blue;
+  background-color: lightgrey;
+}
+
 @media (min-width: 50em) {
   /* styles within the media query */
   img {

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gary R Hughes" />
+    <title>HTML5 Sample Document (I am the title of this web page)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>HTML5 Sample Document (I am the title of this web page)</title>
+    <style>
+      .FloatLeft {
+        float: left;
+        margin: 10px;
+      }
+      img.FloatRight {
+        float: right;
+        margin: 10px;
+        border-style: groove;
+        border-width: 3px;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/ea1959dd8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Nav Menus -->
+    <nav class="MenuWrap">
+      <a href="index.html" class="ListItem">Home</a>
+      <a href="about.html" class="ListItem">About Me</a>
+      <a href="arctic.html" class="ListItem">Arctic</a>
+      <a href="china.html" class="ListItem">China</a>
+      <a href="flexbox.html" class="ListItem">Flexbox</a>
+      <a href="child-selectors.html" class="ListItem active">Child Selectors</a>
+      <a href="#" class="ListItem">Policy</a>
+      <a href="#" class="LastItem">Contact Us</a>
+    </nav>
+    <br />
+    <nav class="MenuWrap2">
+      <a href="index.html" class="ListItem">Home</a>
+      <a href="about.html" class="ListItem">About Me</a>
+      <a href="arctic.html" class="ListItem">Arctic</a>
+      <a href="china.html" class="ListItem">China</a>
+      <a href="flexbox.html" class="ListItem">Flexbox</a>
+      <a href="child-selectors.html" class="ListItem active">Child Selectors</a>
+      <a href="#" class="ListItem">Policy</a>
+      <a href="#" class="LastItem">Contact Us</a>
+    </nav>
+    <main>
+      <!-- Header -->
+      <div class="Header">
+        <h1 style="font-size: 2.5em;">Hire Me!(h1)</h1>
+        <h6>Hello World!(h6)</h6>
+        <p class="sconebefore">the most resplendent of snacks(p)</p>
+      </div>
+      <section class="childSelect">
+        <h2 class="childSelectHead">Child Selectors</h2>
+        <div>
+          <h3>li:first-child</h3>
+          <ul class="liFirstChild">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:last-child</h3>
+          <ul class="liLastChild">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(odd)</h3>
+          <ul class="liOddChild">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(even)</h3>
+          <ul class="liEvenChild">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(2)</h3>
+          <ul class="li2ndChild">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(5)</h3>
+          <ul class="li5thChild">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(3n)</h3>
+          <ul class="liEvery3rdChild">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(2n)</h3>
+          <ul class="liEvery2ndChild">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(3n+1)</h3>
+          <ul class="li1stChildof3">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(4n+2)</h3>
+          <ul class="li2ndChildof4">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(n+3)</h3>
+          <ul class="liChildAfter2nd">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+        <div>
+          <h3>li:nth-child(-n+3)</h3>
+          <ul class="liChild3">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <address>
+        <p class="copyright">
+          <small
+            >Copyright 2020, <span class="bizName">SuperCo.com</span></small
+          >
+        </p>
+      </address>
+      <p>Call customer service at 555-555-55501 for more information.</p>
+      <a
+        href="mailto:gary.hughes87@virginmedia.com?subject=Subject%20box%20text&body=Body%20box%20text."
+        >Email Me</a
+      >
+    </footer>
+  </body>
+</html>
