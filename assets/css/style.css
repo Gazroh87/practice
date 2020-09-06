@@ -45,7 +45,7 @@ h2 {
   font-style: italic;
 } */
 
-p {
+p:not(.classy) {
   font-size: 16px;
   color: #616161;
   line-height: 150%;
@@ -86,7 +86,7 @@ th {
   border-color: red;
 }
 
-p,
+p:not(.classy),
 address {
   font-size: 1.25em;
   color: #616161;
@@ -669,6 +669,48 @@ img[title="tomatoSoup"] {
   color: red;
   border: 2px solid blue;
   background-color: lightgrey;
+  font-weight: bolder;
+}
+
+.alternation tr:nth-child(odd) {
+  background-color: lightskyblue;
+}
+
+.alternation td:nth-child(3n + 2) {
+  background-color: darkred;
+}
+
+#signupForm {
+  display: none;
+}
+
+#signupForm:target {
+  display: block;
+}
+
+.container {
+    width: 960px;
+    height: 34.188px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.orange_section, .orange_aside { 
+  margin: 1.00%;    /*  10px ÷ 960px = 0.010416 */
+  /* margin is used 4 times = 4% so 4% must bed deducted from section and aside width of 100% */
+  background-color: orange;
+  color: white;
+  text-align: center;
+} 
+  
+.orange_section { 
+  float: left; 
+  width: 61.77%;    /* 593px ÷ 960px = 0.617708 */ 
+} 
+  
+.orange_aside { 
+  float: right; 
+  width: 34.23%;    /* 367px ÷ 960px = 0.382291 */ 
 }
 
 @media (min-width: 50em) {
